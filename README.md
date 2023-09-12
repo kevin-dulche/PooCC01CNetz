@@ -1,7 +1,4 @@
-# PooCC01CNetz
-Trabajos, Tareas y exámenes del curso de POO
-
-## Polimorfismo
+# Polimorfismo
 En el archivo `Ejercicios01/Prueba.java` creamos un arreglo de tipo Empleado y guardamos dentro un objeto empleado, un objeto licenciado, y otro objeto gerente, y accedemos al nombre, ya que solo podemos acceder a los atributos de tipo `Empleado` aunque tengamos de tipo `Licenciado` y `Gerente`
 
 ```Java
