@@ -5,9 +5,11 @@ public class Prueba {
         Gerente ger = new Gerente("Dany", 600, new Fecha(3, 3, 2003), "desarrollo", 3000);
         Empleado[] emps = new Empleado[3];
         emps[0] = emp;
-        emps[1] = lic;
+        emps[1] = lic; // polimorfismo
         //emps[2] = new Fecha(4, 4, 2004); Type mismatch: cannot convert from Fecha to Empleado // ERROR
-        emps[2] = ger;
+        emps[2] = ger; // polimorfismo
         System.out.println("Nombre: " + emps[0].getNombre());
+        System.out.println("Nombre: " + emps[1].getNombre());
+        System.out.println("Depto: " + ((Licenciado)emps[1]).getDepto());
     }
 }
