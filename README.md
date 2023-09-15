@@ -19,3 +19,7 @@ public Licenciado(String nombre, double salario, Date fecNac, String depto){
     this.depto = depto;
 }
 ```
+
+Inciso `e)` del Examen 2:
+
+(`Insertar imagen aquí`) //Pendiente
