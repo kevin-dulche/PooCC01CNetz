@@ -1,41 +1,27 @@
-public class Empleado{
-    private String name;
-    private double salary;
-    private Date fecNac;
-
-    Empleado(String name, double salary, Date fecNac){
-        this.name = name;
-        this.salary = salary;
-        this.fecNac = fecNac;
+public class Empleado extends Persona{
+    private double salario;
+    
+    public Empleado(String nombre, Fecha fecNac, double salario){
+        super(nombre, fecNac);
+        this.salario = salario;
     }
 
-    Empleado() {}
+    public Empleado(){}
 
-    public void setName(String name) {
-        this.name = name;
+    public void imprimeDescripcion(){
+        System.out.println("Soy una clase Empleado");
+        System.out.println("Con salario: " + salario);
     }
 
-    public String getName() {
-        return name;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
-    public void setSalary(double salary) {
-        this.salary = salary;
-    }
-
-    public double getSalary() {
-        return salary;
-    }
-
-    public void setFecNac(Date fecNac) {
-        this.fecNac = fecNac;
-    }
-
-    public Date getFecNac() {
-        return fecNac;
+    public double getSalario() {
+        return salario;
     }
 
     public double calcQuincena(){
-        return salary * 15;
+        return salario * 15;
     }
 }

@@ -1,14 +1,12 @@
-package Examen2Java;
-
 public class Fecha {
     private int dia;
     private int mes;
-    private int año;
+    private int anio;
 
-    public Fecha(int dia, int mes, int año){
+    public Fecha(int dia, int mes, int anio){
         this.dia = dia;
         this.mes = mes;
-        this.año = año;
+        this.anio = anio;
     }
 
     public Fecha(){}
@@ -29,11 +27,11 @@ public class Fecha {
         return mes;
     }
 
-    public void setAño(int año) {
-        this.año = año;
+    public void setAnio(int anio) {
+        this.anio = anio;
     }
 
-    public int getAño() {
-        return año;
+    public int getAnio() {
+        return anio;
     }
 }
