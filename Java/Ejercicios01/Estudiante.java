@@ -1,25 +1,44 @@
-public class Estudiante extends Persona {
-    private long matricula;
+public class Estudiante extends Persona implements IdsPersonas{
+	private int matricula;
+		
+	public Estudiante(String nombre, Fecha fecNac, boolean sexo, int matricula) {
+		super(nombre, fecNac, sexo);
+		this.matricula = matricula;
+	}
 
-    public Estudiante(String nombre, Fecha fecNac, long matricula){
-        super(nombre, fecNac);
-        this.matricula = matricula;
-    }
+	public Estudiante() {}
+	
+	public int getMatricula() {
+		return matricula;
+	}
 
-    public void imprimeDescripcion(){
-        System.out.println("Soy una clase Estudiante");
-        System.out.println("Con matricula: " + matricula);
-    }
+	public void setMatricula(int matricula) {
+		this.matricula = matricula;
+	}
 
-    public void setMatricula(long matricula) {
-        this.matricula = matricula;
-    }
+	@Override
+	public String propSeguroSoc() {
+		//Consulta la BD con base en la matricula y obtiene en numero de Seguro Social
+		return "ABC123XYZ";
+	}
 
-    public long getMatricula() {
-        return matricula;
-    }
+	@Override
+	public String propCURP() {
+		//Consulta la BD con base en la matricula y obtiene el CURP
+		return "ABDF01012001MDFWX";
+	}
 
-    public void imprimeCiclo(){
+	@Override
+	public boolean esDiabetico() {
+		return false;
+	}
 
-    }
+	@Override
+	public boolean esHipertenso() {
+		return true;
+	}
+
+	public void imprimerHorario() {
+		System.out.println("Esta en la tarde");
+	}
 }
