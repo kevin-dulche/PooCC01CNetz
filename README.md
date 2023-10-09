@@ -1,5 +1,8 @@
 # PooCC01CNetz
 Trabajos, Tareas y exámenes del curso de POO
 
-## Examen
+## Semana 9
 - Ejercicios
+- Excepciones
+- Ficheros
+- Matrices
